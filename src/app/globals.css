@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #0077b6;
+  --secondary-color: #3d86dc;
+  --text-color: #333333;
+  --success-color: #3aa757;
+  --error-color: #ff5252;
+  --disabled-color: #d3d3d3;
+  --background-color: #ffffff;
+  --hover-color: #0288d0;
+  --border-color: #808080;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.secondary-background-color {
+  background-color: var(--secondary-color);
+}
+
+.button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: var(--hover-color);
+}
+
+.textfield {
+  background-color: white;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 8px;
+  color: var(--text-color);
+}
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table th,
+.table td {
+  border: 1px solid var(--border-color);
+  padding: 8px;
+  text-align: left;
+  transition: background-color 0.3s ease;
+}
+
+.table th {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.table th:hover,
+.table td:hover {
+  background-color: #ffafaf;
+  color: var(--text-color);
+}
+
+.navbar {
+  background-color: var(--primary-color);
+}
